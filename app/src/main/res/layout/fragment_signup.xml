@@ -1,14 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".Fragments.SignupFragment">
+    android:layout_height="600dp"
+    android:orientation="vertical"
+    tools:context="Fragments.SignupFragment"
+    android:background="#ffffff ">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <ImageView
+        android:layout_margin="10dp"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:id="@+id/register"
+        android:layout_gravity="center"
+        android:src="@drawable/register"/>
+
+    <EditText
+        android:id="@+id/txtfname"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        android:hint="First Name"
+        android:layout_margin="10dp">
+        <requestFocus />
+    </EditText>
 
-</FrameLayout>
+
+
+    <EditText
+        android:id="@+id/txtlname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Last Name"
+        android:layout_margin="10dp"/>
+    <EditText
+        android:id="@+id/txtusername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="UserName"
+        android:layout_margin="10dp"/>
+    <EditText
+        android:id="@+id/txtpassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:hint="Password"
+        android:layout_margin="10dp"/>
+    <EditText
+        android:id="@+id/txtrepassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:hint="Confirm Password"
+        android:layout_margin="10dp"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnregister"
+        android:text="Register"
+        android:textSize="25sp"
+        android:layout_margin="20dp"
+        android:background="#0070ff"/>
+
+
+
+</LinearLayout>
