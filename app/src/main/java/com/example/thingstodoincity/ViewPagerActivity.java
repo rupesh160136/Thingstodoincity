@@ -19,6 +19,7 @@ public class ViewPagerActivity extends AppCompatActivity {
         setContentView(R.layout.activity_view_pager);
         tabLayout=findViewById(R.id.tabId);
         viewPager=findViewById(R.id.viewpager);
+        //asdasasdassas
 
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
         adapter.addFragment(new LoginFragment(),"Login");
